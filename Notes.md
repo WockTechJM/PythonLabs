@@ -34,3 +34,31 @@ Practice basic Python scripting on Mac, learn how to use virtual environments, i
 - Start creating functions.
 - Organize scripts in a `scripts/` folder.
 - Log more complex outputs to files for practice.
+
+
+## Secure Linux VM Lab - SSH Hardening, NSG, Monitoring, Backups
+
+### SSH Hardening
+sudo adduser labadmin
+sudo usermod -aG sudo labadmin
+sudo mkdir -p /home/labadmin/.ssh
+sudo cp ~/.ssh/authorized_keys /home/labadmin/.ssh/
+sudo chown -R labadmin:labadmin /home/labadmin/.ssh
+sudo chmod 700 /home/labadmin/.ssh
+sudo chmod 600 /home/labadmin/.ssh/authorized_keys
+
+sudo nano /etc/ssh/sshd_config
+# Add at bottom:
+PermitRootLogin no
+PasswordAuthentication no
+sudo sshd -t
+sudo systemctl restart ssh
+
+### NSG / Firewall
+Check inbound rules: only your public IP allowed on port 22
+Test from Mac:
+ssh -i ~/Documents/AzureKeys/vm-secure-linux_key.pem labadmin@<public-ip>
+
+### Monitoring / Backup
+Enable Azure Monitor / Insights
+Enable VM Backup in Recovery Services Vault
