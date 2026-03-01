@@ -2,3 +2,44 @@ pwd
 ls -la
 whoami
 tree
+520  cd PythonLabs
+  521  python3 -m venv venv
+  522  source venv/bin/activate
+  523  code .
+  524  code
+  525  echo $SHELL
+  526  code .
+  527  git init
+  528  git remote add origin https://github.com/WockTechJM/PythonLabs.git
+  529  git status
+  530  git add .
+  531  git commit -m "Add first python script, notes, and READ me for PythonLabs"
+  532  clear
+  533  deactivate
+  534  ssh -i ~/Documents/keys/lab-ssh-key azureadadmin@20.127.11.162
+  535  ssh -i ~/Documents/AzureKeys/vm-secure-linux-key.pem azureadadmin@20.127.11.162
+  536  ls
+  537  cd ~/documents
+  538  ssh -i ~/Documents/AzureKeys/vm-secure-linux-key.pem azureadadmin@20.127.11.162
+  539  ls
+  540  cd AzureKeys
+  541  ls
+  542  chmod 600 vm-secure-linux-key.pem
+  543  ssh -i ~/Documents/AzureKeys/vm-secure-linux_key.pem azureadadmin@20.127.11.162
+  544  chmod 600 ~documents/azurekeys/vm-secure-linux_key.pem
+  545  chmod 600 vm-secure-linux_key.pem
+  546  ssh -i ~/Documents/AzureKeys/vm-secure-linux_key.pem azureadadmin@20.127.11.162
+  547  cd ~/documents
+  548  ssh -i ~/Documents/AzureKeys/vm-secure-linux_key.pem azureadadmin@20.127.11.162
+  549  chmod 600 ~/documents/azurekeys/vm-secure-linux_key.pem
+  550  ssh -i ~/Documents/AzureKeys/vm-secure-linux_key.pem azureadadmin@20.127.11.162
+  551  ssh-keygen iy -f ~/documents/AzureKeys/vm-secure-linux_key.pem
+  552  ssh-keygen -y -f ~/documents/AzureKeys/vm-secure-linux_key.pem
+  553  ssh -i ~/Documents/AzureKeys/vm-secure-linux_key.pem azureadadmin@20.127.11.162
+  554  ssh -i ~/Documents/AzureKeys/vm-secure-linux_key.pem azureadmin@20.127.11.162
+  555  ssh -i ~/Documents/AzureKeys/vm-secure-linux_key.pem labadmin@20.127.11.162
+  556  ssh -i ~/Documents/AzureKeys/vm-secure-linux_key.pem root@20.127.11.162
+  557  history >> ~/PythonLabs/Command_log.txt
+  558  history
+  559  history > ~/PythonLabs/Command_log.txt
+  560  history
